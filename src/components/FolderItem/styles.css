@@ -1,0 +1,42 @@
+.folder-item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color ease-in .3s;
+    width: 200px;
+    height: 50px;
+}
+
+.folder-item-wrapper_selected {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, .8);
+    border-right: 4px solid rgb(0, 0, 0, .5);
+
+}
+
+
+.folder-item-wrapper:hover{
+    background-color: rgba(128, 128, 128, .8);
+    box-shadow: 4px 4px 2px rgba(128, 128, 128, .3);
+}
+
+.folder-item {
+    text-align: start;
+}
+
+.edit-button {
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/img/edit-icon.svg) no-repeat;
+    background-size: cover;
+}
+
+.edit-button:hover {
+    border: 1px #000 solid;
+    padding: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, .5);
+}

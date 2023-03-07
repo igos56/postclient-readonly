@@ -1,0 +1,103 @@
+.folders-list {
+    width: 200px;
+    margin-bottom: 10px;
+    border-bottom: 1px rgba(0, 0, 0, .5) solid;
+}
+
+.btn {
+    width: 210px;
+    height: 50px;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: .5;
+    transition: opacity ease-in .3s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn.open-modal-btn:before {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    background: url(../../assets/img/plus.svg) no-repeat;
+}
+
+.btn.delete-folder-btn:before {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    background: url(../../assets/img/minus.svg) no-repeat;
+    align-self: center;
+}
+
+.edit-modal-black {
+    display: none;
+    transition: display ease-in 5s;
+}
+
+.edit-modal-black.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.edit-modal {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-250px, -150px);
+
+    background-color: #fff;
+    line-height: 1.5rem;
+
+    border: 2px solid black;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.btn {
+    border: none;
+}
+
+.btn.ok-btn:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn.cancel-btn:hover {
+    font-weight: bold;
+}
+
+.edit-input {
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.options-panel-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(79, 79, 79, .4);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  background-image: url(../../assets/img/logo.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mainscreen-wrapper {
+  display: flex;
+}
+
+.modal-filter-black {
+  display: none;
+}
+
+.modal-filter-black.active {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-create-folder {
+  width: 300px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-150px, -75px);
+
+  background-color: #fff;
+
+  border: 2px solid black;
+}
+
+.modal-create-folder input {
+  width: 200px;
+  padding: 5px;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  outline: none;
+}
+
+.create-folder-btn {
+  width: 200px;
+  padding: 5px;
+
+  align-self: center;
+}

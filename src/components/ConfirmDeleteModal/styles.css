@@ -1,0 +1,58 @@
+.confirm-modal-black {
+    display: none;
+    transition: display ease-in 5s;
+}
+
+.confirm-modal-black.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.confirm-delete-modal {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-250px, -150px);
+
+    background-color: #fff;
+    line-height: 1.5rem;
+
+    border: 2px solid black;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.btn {
+    border: none;
+}
+
+.btn.ok-btn:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn.cancel-btn:hover {
+    font-weight: bold;
+}
+
+.ok-btn {
+    background-color: rgb(237, 95, 123);
+    margin-right: 10px;
+}

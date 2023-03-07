@@ -1,0 +1,29 @@
+.custom-select {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-shadow: 4px 4px 5px rgba(128, 128, 128, .8);
+    z-index: 50;
+}
+
+.custom-select.active {
+    display: block;
+}
+
+.select-item {
+    height: 50px;
+    background-color: rgba(128, 128, 128, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.select-item:hover {
+    color: #fff;
+    background-color: rgb(236, 122, 145);
+    font-weight: bold;
+}

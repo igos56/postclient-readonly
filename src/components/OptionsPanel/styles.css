@@ -1,0 +1,55 @@
+.options-panel {
+    display: none;
+    padding-left: 10px;
+    position: relative;
+}
+
+.options-panel.active {
+    display: flex;
+    align-items: center;
+}
+
+.message-red-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-image: url(../../assets/img/message-red.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-image ease-in .4s;
+}
+.message-red-icon:hover {
+    background-image: url(../../assets/img/message-red-hover.svg);
+}
+
+.trash-delete-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-image: url(../../assets/img/trash.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-image ease-in .4s;
+}
+.trash-delete-icon:hover {
+    background-image: url(../../assets/img/trash-hover.svg);
+}
+
+.folders-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-image: url(../../assets/img/folders.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-image ease-in .4s;
+}
+.folders-icon:hover {
+    background-image: url(../../assets/img/folders-hover.svg);
+}

@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Postclient readonly
+Настраиваемый почтовый клиент, который позволяет просматривать письма, сгруппированные по папкам и перемещать их между папками
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Чтобы запустить проект:
+### Клонировать локально любым удобным способом;
+### Установить пакеты `npm i`;
+### Запустить проект `npm start`;
 
-## Available Scripts
+## Функционал реализованный на данной итерации:
+1. Письма распределены по папкам, отображаются в табличном формате: автор/текст письма/дата;
+2. Возможность зайти в папку и увидеть список содержащихся в ней писем;
+3. Письма можно перемещать между папками по одному, а также группой, выделяя нужные строки писем;
+4. Возможность создавать свои кастомные папки с уникальными именами;
+5. Возможность переименовать папку (ТОЛЬКО ДЛЯ КАСТОМНЫХ ПАПОК);
+6. Возможность удалить папку (ТОЛЬКО ДЛЯ КАСТОМНЫХ ПАПОК);
+7. Прочитанность / непрочитанность сообщений;
+8. Открытие полного письма на просмотр;
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Возможная карта тестирования
+1. Запустить проект `npm start`;
+2. Перемещаться по папкам "по умолчанию", наблюдать находящиеся там письма;
+3. В папке "Входящие" письма выделены жирным шрифтом, как непрочитанные;
+4. Кликнуть по любому письму. Письмо откроется на полный простмотр, при этом визуальное состояние смениться на обычное "Прочитано". Можно кликать по любым письмам просматривая полную версию;
+5. Создать папку "Важные" (ВАЖНО! Именно для этого названия заготовлено письмо, которое окажется в этой папке после создания);
+6. Перейти в папку "Важные", прочитать письмо;
+7. Перейти в папку "Входящие", выбрать все письма с помощью чекбоксов, в открывшейся сверху панели редактированя выбрать иконку с папками (для перемещения) и переместить выбранные папки в папку "Важные";
+8. Перейти в папку "Важные", убедиться, что письма находятся там;
+9. Нажать на иконку "Карандаш" на папке "Важные", чтобы переименовать папку, ввести любое название, например "Неважные";
+10. Убедиться, что все письма остались в новой папке "Неважные", т.к. у этих писем также сменились флаги отображения;
+11. Удалить папку "Неважные". Для этого выбрав ее, нажать на "Удалить вабранную". Все письма находящиеся в удаляемой папке, попадут в папку "Удаленные";
+12. Прошу обратить внимание, что ПАПКИ ПО УМОЛЧАНИЮ НЕЛЬЗЯ УДАЛИТЬ ИЛИ ПЕРЕИМЕНОВАТЬ!
